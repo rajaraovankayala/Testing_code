@@ -49,6 +49,7 @@ class OrderEmailView extends \base\common\view\AbstractOrderEmailView {
                     <strong><<ITEM_NAME>></strong>
                     <strong><<ITEM_NAME>></strong>
                     <<ITEM_OPTION_SIZE>>
+                    <<ITEM_OPTION_SIZE>>
                 </td>
                 <td align="left" valign="top"  style="padding:15px;border-top:1px dashed #CCCCCC;" ><<ITEM_SKU>></td>
                 <td align="center" valign="top"  style="padding:15px;border-top:1px dashed #CCCCCC;" ><<ITEM_QTY>></td>
