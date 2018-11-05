@@ -22,6 +22,7 @@ class OrderEmailView extends \base\common\view\AbstractOrderEmailView {
         }
 
         $template = $this->getHtmlBodyTemplate();
+        $this->map('<<CUSTOMER_ORDERID>>', $this->mapCourierTracking($this->orderID, 'HTML'), $template);
         $this->map('<<COURIER_TRACKING>>', $this->mapCourierTracking($this->order, 'HTML'), $template);
         $this->map('<<RECIPIENT_EMAIL>>', $this->order->customerEmail, $template);
         $this->map('<<INVOICE_LINES>>', $this->mapInvoiceLines($this->order->invoice->lines), $template);
