@@ -45,7 +45,7 @@ class OrderEmailView extends \base\common\view\AbstractOrderEmailView {
     protected function getInvoiceLineHTMLTemplate(){
         return
             '<tr>
-                <td align="left" valign="top" style="padding:15px;border-top:1px dashed #CCCCCC;" width="50%">
+                <td align="left" valign="left" style="padding:15px;border-top:1px dashed #CCCCCC;" width="50%">
                     <strong><<ITEM_NAME>></strong>
                     <strong><<ITEM_NAME>></strong>
                     <<ITEM_OPTION_SIZE>>
